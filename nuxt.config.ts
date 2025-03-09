@@ -11,4 +11,9 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
+
+  modules: ['nuxt-gtag'],
+  gtag: {
+    id: 'GTM-W36CLFX3'
+  }
 })
