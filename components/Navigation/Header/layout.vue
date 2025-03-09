@@ -21,7 +21,7 @@ const closeMenu = () => {
         <!-- Desktop Menu -->
         <nav class="hidden md:flex items-center space-x-6">
           <NavigationHeaderNavDesktop 
-            v-for="item in ['Homepage', 'Novinky', 'Blog', 'Kontakt']" 
+            v-for="item in ['Novinky', 'Archív', 'Kontakt']" 
             :key="item" 
             :text="item" 
           />
@@ -57,7 +57,7 @@ const closeMenu = () => {
     >
       <nav class="container mx-auto px-4 py-3 flex flex-col space-y-3">
         <NavigationHeaderNavMobile
-          v-for="item in ['Homepage', 'Novinky', 'Blog', 'Kontakt']" 
+          v-for="item in ['Novinky', 'Archív', 'Kontakt']" 
           :key="item" 
           :text="item" 
           @click="closeMenu"

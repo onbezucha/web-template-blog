@@ -5,10 +5,10 @@
           <!-- Hero text -->
           <div class="md:w-1/2 mb-10 md:mb-0">
       <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-        Inovativní řešení pro váš byznys
+        Lorem Ipsum is simply dummy text of the printing
       </h1>
       <p class="text-lg md:text-xl text-blue-100 mb-8 max-w-xl">
-        WolfTag přináší pokročilé technologie, které vám pomohou růst a uspět v digitálním světě.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
       </p>
       <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
         <ButtonsHerobutton variant="primary">Zjistit více</ButtonsHerobutton>
