@@ -3,22 +3,20 @@ defineProps({
   text: {
     type: String,
     required: true
+  },
+  to: {
+    type: String,
+    required: true
   }
 });
-
-const emit = defineEmits(['click']);
-
-const handleClick = () => {
-  emit('click');
-};
 </script>
 
 <template>
-  <a 
-    href="#" 
-    @click.prevent="handleClick"
-    class="block py-2 px-4 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors duration-200"
+  <NuxtLink 
+    :to="to" 
+    class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 py-2 transition-colors duration-200"
+    :class="{ 'text-blue-600 dark:text-blue-400': $route.path === to }"
   >
     {{ text }}
-  </a>
+  </NuxtLink>
 </template>

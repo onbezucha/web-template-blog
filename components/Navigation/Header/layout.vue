@@ -8,6 +8,13 @@ const isOpen = ref(false);
 const closeMenu = () => {
   isOpen.value = false;
 };
+
+// Definice navigačních položek s cestami
+const navItems = [
+  { text: 'Novinky', path: '/news' },
+  { text: 'Archív', path: '/archive' },
+  { text: 'Kontakt', path: '/contact' }
+];
 </script>
 
 <template>
@@ -21,9 +28,10 @@ const closeMenu = () => {
         <!-- Desktop Menu -->
         <nav class="hidden md:flex items-center space-x-6">
           <NavigationHeaderNavDesktop 
-            v-for="item in ['Novinky', 'Archív', 'Kontakt']" 
-            :key="item" 
-            :text="item" 
+            v-for="item in navItems" 
+            :key="item.text" 
+            :text="item.text" 
+            :to="item.path"
           />
         </nav>
         
@@ -57,9 +65,10 @@ const closeMenu = () => {
     >
       <nav class="container mx-auto px-4 py-3 flex flex-col space-y-3">
         <NavigationHeaderNavMobile
-          v-for="item in ['Novinky', 'Archív', 'Kontakt']" 
-          :key="item" 
-          :text="item" 
+          v-for="item in navItems" 
+          :key="item.text" 
+          :text="item.text" 
+          :to="item.path"
           @click="closeMenu"
         />
       </nav>
