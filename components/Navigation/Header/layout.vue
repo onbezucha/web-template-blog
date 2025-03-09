@@ -12,7 +12,7 @@ const closeMenu = () => {
 // Definice navigačních položek s cestami
 const navItems = [
   { text: 'Novinky', path: '/news' },
-  { text: 'Archív', path: '/archive' },
+  { text: 'Blog', path: '/archive' },
   { text: 'Kontakt', path: '/contact' }
 ];
 </script>
